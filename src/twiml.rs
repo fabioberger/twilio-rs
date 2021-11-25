@@ -1,3 +1,4 @@
+mod dial;
 mod gather;
 mod message;
 mod play;
@@ -6,6 +7,7 @@ mod redirect;
 mod say;
 mod sms;
 
+pub use self::dial::Dial;
 pub use self::gather::{Gather, Prompt};
 pub use self::message::Message;
 pub use self::play::{Digits, Play, Playable};
